@@ -1,8 +1,16 @@
+
 <!DOCTYPE html>
 <html xml:lang="es">
   <head>
-    <title>Sumador</title>
+    <title>Sumador y Multiplicador</title>
+    <style>
+      .resultado {
+    min-height: 50px; /* Ajusta según el tamaño del texto */
+    
+}
+    </style>
   </head>
+  
   <body>
     <h1>Sumador</h1>
     <form id="sumar-form">
@@ -12,7 +20,19 @@
       <input type="number" id="segundo-numero" />
       <input type="submit" value="Sumar" id="sumar-button" />
     </form>
-    <div id="resultado-div"></div>
+    <div  class="resultado" id="resultado-div"></div>
+
+    
+
+    <h1 class="mult">Multiplicador</h1>
+    <form id="multiplicar-form">
+      <label for="primer-numero-m">Primer número:</label>
+      <input type="number" id="primer-numero-m" />
+      <label for="segundo-numero-m">Segundo número:</label>
+      <input type="number" id="segundo-numero-m" />
+      <input type="submit" value="Multiplicar" id="multiplicar-button" />
+    </form>
+    <div id="resultado-div-m"></div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>
